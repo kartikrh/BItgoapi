@@ -26,7 +26,7 @@ app.get('/', function (req, res) {
     res.send(JSON.stringify({ Server: "A" }));
 });
 
-var server = app.listen(1004);
+var server = app.listen(8664);
 var router = express.Router();
 
 app.use(bodyParser.urlencoded({ limit: '100mb', extended: true }));// configure app to use bodyParser() this will let us get the data from a POST
